@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="home">
+			<div class="mask">
+				<ul class="nav">
+					<li><a href="">Work</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+
+
+				<div class="helloworld">
+					<h1>Salam.</h1>
+				</div>
+
+				<div class="bio">
+					<p>Gummies pie tootsie roll chupa chups icing cotton candy jujubes cake dessert. Chocolate cake lemon drops fruitcake bonbon gingerbread chupa chups wafer.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="work">
+			<h4>Seleceted projects</h4>
+				<div class="projects">
+					<li class="shots--shot">
+				</div>
+		</div>
+
+		<div class="quote">
+			<blockquote>	
+				<h3>Design is not just what it looks like and feels like, design is how it works.</h3>
+
+				<p>- <i>Steve Jobs</i></p>
+			</blockquote>
+		</div>
+
+
+		<div class="about">
+			<h4>A few words about me</h4>
+			<div class="avatar_wrap">
+				<div class="avatar">
+					<img src="photo.jpg" height="120px" width="120px" alt="It's meee, Mariooo!">
+				</div>
+			</div>
+
+			<div class="text">
+				<p>Soufflé halvah sweet I love brownie. Pastry chupa chups sugar plum pie tiramisu chupa chups tiramisu toffee. Biscuit gummies wafer biscuit apple pie bear claw wafer I love I love. Cookie tart I love tart. Chupa chups sweet I love sweet roll bear claw brownie. Liquorice topping chupa chups. Cake cotton candy pastry. Carrot cake dessert soufflé. Tootsie roll bonbon I love carrot cake sesame snaps chocolate cake powder muffin. Sesame snaps tootsie roll pastry pie I love bonbon. Lollipop cotton candy macaroon wafer chocolate cake powder powder marzipan. Biscuit gingerbread sesame snaps.</p>
+				<p>Chupa chups I love gummies liquorice soufflé. Icing cupcake bear claw. Macaroon sesame snaps sweet carrot cake marshmallow muffin. Pie cake candy I love. Biscuit lemon drops danish cotton candy toffee. Tootsie roll bonbon I love carrot cake sesame snaps chocolate cake powder muffin. Sesame snaps tootsie roll pastry pie I love bonbon. Lollipop cotton candy macaroon wafer chocolate cake powder powder marzipan. Biscuit gingerbread sesame snaps. Brownie marshmallow oat cake cake cake ice cream sugar plum cotton candy sugar plum.</p>
+			</div>
+		</div>
+		<div class="contact">
+			<h4>Get in touch</h4>
+			<p>Working on a new project ? Let's work togheter !</p>
+			<div class="button">
+				<a href="mailta:amine.mounazil@gmail.com"><p>Hire me</p></a>
+			</div>
+
+			<div class="social">
+				<ul>
+					<li><img src="twitter.png" height="20px" width="25px"alt="twitter"><a href="https://www.twitter.com/amin3_"></a></img></li>
+					<li><img src="instagram.png" height="20px" width="20px"alt="instagram"><a href="https://www.instagram.com/amin3_"></a></img></li>
+					<li><img src="dribbble.png" height="20px" width="20px"alt="dribbble"><a href="https://www.dribbble.com/amin3_"></a></img></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</body>
+
+		<!-- jRibbble -->
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.jribbble.js"></script>
+        <script type="text/javascript">
+
+			 $.jribbble.setToken('063271f1d21b9726da80757c3cf4cb0eab0e06fd2676bdeb1e587215c8455e10');
+
+			    /*
+			      Jribbble methods make ajax requests to the Dribbble API. When
+			      the requests complete, a Promise is returned. Use `then` to take an action
+			      on the response from the server.
+			    */
+			    $.jribbble.shots('teams').then(function(shots) {
+			      var html = [];
+
+			      shots.forEach(function(shot) {
+			        // See the Dribbble docs for all available shot properties.
+			        html.push('<li class="shots--shot">');
+			        html.push('<a href="' + shot.html_url + '">');
+			        html.push('<img src="' + shot.images.normal + '">');
+			        html.push('</a></li>');
+			      });
+
+			      $('.shots').html(html.join(''));
+			    });
+
+        </script>
+
+</html>

@@ -1,0 +1,233 @@
+
+body {
+	padding: 0;
+	margin:0;
+	background: #FFFFFF;
+	font-family: 'Merriweather';
+	background-image: url(https://download.unsplash.com/photo-1428908728789-d2de25dbd4e2);
+	background-size: 100% 800px;
+    background-repeat: no-repeat;
+
+}
+
+.home {
+	background-image: linear-gradient(-180deg, rgba(125,125,125,0.00) 64%, #D3D7D9 87%, #DFE3E3 91%, #E6EAEA 96%, #EDF1F1 100%);
+	z-index: 99999;
+	height: 800px;
+}
+.mask ul { 
+	list-style: none;
+}
+.mask ul li {
+	padding-right: 10%;
+	list-style: none;
+	display: inline;
+	float: right;
+}
+.mask ul li a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #887F85;
+}
+.mask ul li a:hover {
+	color: #46A8B7;
+}
+h1 {
+	font-size: 48px;
+	text-align: center;
+	color: #354353;
+	line-height: 60px;
+	padding-top: 15%;
+}
+.bio {
+	max-width: 40%;
+	margin: 0 auto;
+}
+.bio p {
+	text-align: center;
+	font-size: 18px;
+	color: #887F85;
+}
+
+.work {
+	height: 1100px;
+	background-color: #EDF1F1;
+	margin-top: -21px;
+}
+
+
+.work ul { 
+	list-style: none;
+	padding-top: 2%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.work ul li p {
+	text-align: center;
+	color: #887F85;	
+}
+.work ul {
+	list-style: none;
+	font-size: 0px;
+	margin-left: -2.5%; /* should match li left margin */
+}
+.work ul li {
+	display: inline-block;
+	padding: 10px;
+	margin: 0 0 2.5% 2.5%;
+	font-size: 16px;
+	font-size: 1rem;
+	vertical-align: top;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.work ul li img {
+	max-width: 100%;
+	border-radius: 5px;
+	height: auto;
+	margin: 0 0 10px;
+
+}
+/* class for 3 columns */
+.work ul li {
+	width: 30.83%; /* this value + 2.5 should = 33% */
+}
+
+
+
+
+.quote {
+	height: 300px;
+	background-color: #354353;
+	margin-top: -1.5%;
+}
+
+h3 {
+	padding-top: 9%;
+	color: #D8D8D8;
+	text-align: center;
+}
+h4 {
+	padding-top: 6%;
+	text-align: center;
+	color: #46A8B7;
+}
+.quote p {
+	color: #46A8B7;
+	float: right;
+	padding-right: 15%;
+	padding-top: 3%;
+}
+.about {
+	height: 800px;
+	background-color: #EDF1F1;
+	margin-top: -2%;
+}
+.avatar img {
+	display:  block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	border-radius: 4000px;
+	border: 10px solid #46A8B7;
+}
+
+.about .text {
+	max-width: 65%;
+	margin: 0 auto;
+}
+.about .text p {
+	margin-top: 5%;
+	text-align: justify;
+	color: #887F85;	
+	line-height: 1.6;
+}
+.text p:first-child:first-letter {
+	float: left; 
+	font-size: 75px; 
+	line-height: 60px; 
+	padding-top: 4px; 
+	padding-right: 8px; 
+	padding-left: 3px;
+}
+.contact {
+	height: 300px;
+	background-color: #354353;
+	margin-top: -1.6%;
+	position: relative;
+}
+.contact p {
+	text-align: center;
+	color: #EDF1F1;
+	margin-top: 3%;
+}
+.button {
+	margin: 0 auto;
+	margin-top: 3%;
+	height: 40px;
+	width: 100px;
+	border-radius: 5px;
+	border-bottom: 3px solid #3793A1;
+	background-color: #46A8B7;
+}
+.button :hover {
+	border-bottom:none;
+}
+a {
+	text-decoration: none;
+}
+.button a p {
+	text-align: center;
+	padding-top: 13%;
+	font-size: 14px;
+	color: #EDF1F1;
+}
+.social {
+	height: 70px;
+	background-color: #46A8B7;
+	margin-top: 4%;
+}
+.social ul { 
+	list-style: none;
+	padding-top: 2%;
+}
+.social ul li {
+	padding-right: 10%;
+	display: inline;
+	float: right;
+}
+.socail ul li a {
+	text-decoration: none;
+}
+.socaial ul li a:hover {
+	opacity: 50%;
+}
+
+
+
+
+ 
+@media (max-width: 480px) {
+	.work ul {
+		margin-left: 0;
+	}
+	.work ul li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
